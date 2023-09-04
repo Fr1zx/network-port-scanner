@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2"
+    android:background="@color/white"
+    android:id="@+id/background">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="77dp"
+        android:layout_height="71dp"
+        android:src="@drawable/sun"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="-10dp"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:hint="Enter IP"
+        android:textColorHint="#808080"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="-------------------------------------------------"
+        android:textSize="29dp"
+        android:layout_marginTop="400dp"/>
+
+    <TextView
+        android:id="@+id/textwait"
+        android:layout_width="193dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/ScanButton"
+        android:layout_marginLeft="140dp"
+        android:text=""
+        android:textSize="30dp"
+        android:textStyle="italic"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ScanButton"
+        android:layout_width="283dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/edittext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonscan"
+        android:text="Scan"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="54dp"
+        android:layout_below="@id/ScanButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="130dp"
+        android:text="Result:"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textSize="33dp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="332dp"
+        android:layout_height="327dp"
+        android:layout_marginTop="450dp"
+        android:text=""
+        android:textColor="#90EE90"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"/>
+</RelativeLayout>
