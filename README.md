@@ -28,3 +28,9 @@ The app allows you to enter the IP address of a remote device and scan specific 
 ## Monetization
 
 The app is integrated with an advertising network for monetization. Test ad unit IDs are used for demonstration purposes. You can configure your own ad units by replacing the test ad unit IDs in the code.
+
+## Image
+
+![alt text](https://github.com/Fr1zx/network-port-scanner/blob/master/image1.jpg)
+
+![alt text](https://github.com/Fr1zx/network-port-scanner/blob/master/image2.jpg).
